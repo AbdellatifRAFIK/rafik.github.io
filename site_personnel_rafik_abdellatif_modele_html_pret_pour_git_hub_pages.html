@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rafik Abdellatif – Site personnel</title>
+  <meta name="description" content="Site personnel de Dr. Abdellatif Rafik : CV, projets, publications, conférences, collaborations et contact." />
+
+  <!-- Tailwind CSS CDN (léger et pratique pour un site one‑page) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#f97316',  // accent principal
+              blue: '#1e3a8a'     // bleu foncé
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+
+  <!-- Open Graph / SEO de base -->
+  <meta property="og:title" content="Rafik Abdellatif – Site personnel" />
+  <meta property="og:description" content="CV, projets, publications, conférences, collaborations et contact." />
+  <meta property="og:type" content="website" />
+
+  <!-- Schéma JSON-LD Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdellatif Rafik",
+    "jobTitle": "International Postdoctoral Research Fellow",
+    "affiliation": [
+      {"@type": "Organization", "name": "UM6P"},
+      {"@type": "Organization", "name": "CNRS"},
+      {"@type": "Organization", "name": "FGCU"}
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/", 
+      "https://www.researchgate.net/",
+      "https://publons.com/"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-800 selection:bg-brand.orange/20">
+  <!-- Header fixe -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="#accueil" class="font-semibold text-brand.blue tracking-tight">rafikabdellatif</a>
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a href="#accueil" class="hover:text-brand.orange">Accueil</a>
+          <a href="#cv" class="hover:text-brand.orange">CV</a>
+          <a href="#projets" class="hover:text-brand.orange">Projets</a>
+          <a href="#publications" class="hover:text-brand.orange">Publications</a>
+          <a href="#conferences" class="hover:text-brand.orange">Conférences</a>
+          <a href="#leadership" class="hover:text-brand.orange">Management</a>
+          <a href="#contact" class="hover:text-brand.orange">Contact</a>
+        </nav>
+        <a href="#contact" class="md:inline-flex hidden px-3 py-1.5 rounded-xl bg-brand.orange text-white text-sm font-medium shadow-sm hover:opacity-90">Me contacter</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Accueil -->
+  <section id="accueil" class="pt-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div class="py-12">
+        <h1 class="text-3xl md:text-5xl font-bold text-brand.blue leading-tight">Dr. Abdellatif Rafik</h1>
+        <p class="mt-3 text-lg text-slate-600">International Postdoctoral Research Fellow – UM6P–CNRS · Researcher in Climate, Hydrology & Atmospheric Chemistry</p>
+        <p class="mt-4 text-slate-700">Centres d'intérêt : Climat, télédétection (InSAR, GRACE), modélisation hydrologique, chimie atmosphérique (NH<sub>3</sub>), qualité de l'air, ressources en eau.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#cv" class="px-4 py-2 rounded-xl border border-brand.blue text-brand.blue hover:bg-brand.blue hover:text-white transition">Voir mon CV</a>
+          <a href="#publications" class="px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50">Publications</a>
+          <a href="assets/CV_Abdellatif_Rafik.pdf" class="px-4 py-2 rounded-xl bg-brand.orange text-white hover:opacity-90" download>Télécharger le CV (PDF)</a>
+        </div>
+        <div class="mt-4 flex gap-4 text-sm">
+          <a href="https://www.researchgate.net/" class="underline hover:text-brand.orange">ResearchGate</a>
+          <a href="https://publons.com/" class="underline hover:text-brand.orange">Publons</a>
+          <a href="https://scholar.google.com/" class="underline hover:text-brand.orange">Google Scholar</a>
+          <a href="https://www.linkedin.com/" class="underline hover:text-brand.orange">LinkedIn</a>
+        </div>
+      </div>
+      <div class="py-12">
+        <div class="aspect-[4/3] bg-gradient-to-br from-brand.blue/10 to-brand.orange/10 rounded-2xl border border-slate-200 flex items-center justify-center">
+          <span class="text-slate-500">Photo / visuel (400×300)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section id="cv" class="py-16 bg-slate-50 border-t border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand.blue">CV</h2>
+      <p class="mt-2 text-slate-600">Formation · Expériences · Compétences · Encadrement</p>
+
+      <!-- Formation -->
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-slate-800">Formation</h3>
+          <ul class="mt-3 space-y-3">
+            <li class="p-4 bg-white rounded-xl border border-slate-200">
+              <div class="font-medium">Ph.D. – Remote Sensing, Hydrogeology & Hydrological Modeling</div>
+              <div class="text-sm text-slate-600">Mohammed VI Polytechnic University (UM6P)</div>
+              <div class="text-xs text-slate-500">Années : 20XX–20XX</div>
+            </li>
+            <li class="p-4 bg-white rounded-xl border border-slate-200">
+              <div class="font-medium">MSc – (spécialité)</div>
+              <div class="text-sm text-slate-600">Université …</div>
+              <div class="text-xs text-slate-500">Années : 20XX–20XX</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Expériences -->
+        <div>
+          <h3 class="text-xl font-semibold text-slate-800">Expériences</h3>
+          <ul class="mt-3 space-y-3">
+            <li class="p-4 bg-white rounded-xl border border-slate-200">
+              <div class="font-medium">International Postdoctoral Research Fellow</div>
+              <div class="text-sm text-slate-600">UM6P–CNRS (ICARE) · Orléans, France</div>
+              <div class="text-xs text-slate-500">2024–présent · NH<sub>3</sub>, qualité de l'air, climat</div>
+            </li>
+            <li class="p-4 bg-white rounded-xl border border-slate-200">
+              <div class="font-medium">Visiting Researcher</div>
+              <div class="text-sm text-slate-600">Lund University · Suède</div>
+              <div class="text-xs text-slate-500">20XX · Modélisation & télédétection</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Compétences & Encadrement -->
+      <div class="mt-10 grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-slate-800">Compétences</h3>
+          <div class="mt-3 flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 rounded-xl bg-white border border-slate-200">Climat & hydrologie</span>
+            <span class="px-3 py-1 rounded-xl bg-white border border-slate-200">InSAR · GRACE</span>
+            <span class="px-3 py-1 rounded-xl bg-white border border-slate-200">Machine Learning</span>
+            <span class="px-3 py-1 rounded-xl bg-white border border-slate-200">Chimie atmosphérique</span>
+            <span class="px-3 py-1 rounded-xl bg-white border border-slate-200">Analyse isotopique</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-slate-800">Encadrement / Enseignement</h3>
+          <ul class="mt-3 list-disc list-inside text-slate-700 space-y-2">
+            <li>Encadrement d'étudiants (ex. Chris – extrêmes hydrologiques, Essaouira)</li>
+            <li>Interventions pédagogiques (cours, séminaires)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets & Collaborations -->
+  <section id="projets" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand.blue">Projets & Collaborations</h2>
+      <p class="mt-2 text-slate-600">Sélection de projets, partenariats internationaux et résultats marquants.</p>
+
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Carte projet -->
+        <article class="p-5 rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <h3 class="font-semibold">Meskala–Essaouira : Climat actuel et futur</h3>
+          <p class="mt-2 text-sm text-slate-600">Étude climatologique régionale, scénarios RCP/SSP, impacts hydrologiques.</p>
+          <a href="#" class="mt-3 inline-block text-brand.blue underline text-sm">Voir le projet</a>
+        </article>
+        <article class="p-5 rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <h3 class="font-semibold">Atmospheric Ammonia (NH3) – ICARE</h3>
+          <p class="mt-2 text-sm text-slate-600">Combinaison télédétection + modélisation pour analyser les émissions d'ammoniac.</p>
+          <a href="#" class="mt-3 inline-block text-brand.blue underline text-sm">Voir le projet</a>
+        </article>
+        <article class="p-5 rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <h3 class="font-semibold">FGCU – Collaboration internationale</h3>
+          <p class="mt-2 text-sm text-slate-600">Projets transatlantiques sur eau, atmosphère et changements climatiques.</p>
+          <a href="#" class="mt-3 inline-block text-brand.blue underline text-sm">Voir le projet</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="py-16 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand.blue">Publications</h2>
+      <p class="mt-2 text-slate-600">Derniers articles, chapitres et prépublications (sélection).</p>
+
+      <ol class="mt-6 space-y-4">
+        <li class="p-4 bg-white rounded-xl border border-slate-200">
+          <div class="font-medium">Titre de l'article</div>
+          <div class="text-sm text-slate-600">Auteurs (année). Revue, volume(issue), pages. DOI: <a class="underline" href="#">xx.xxxx/xxxx</a></div>
+          <div class="text-xs text-slate-500 mt-1">Mots-clés : NH3, télédétection, modélisation</div>
+        </li>
+        <li class="p-4 bg-white rounded-xl border border-slate-200">
+          <div class="font-medium">Titre de l'article</div>
+          <div class="text-sm text-slate-600">Auteurs (année). Revue… DOI: <a class="underline" href="#">xx.xxxx/xxxx</a></div>
+        </li>
+      </ol>
+
+      <div class="mt-6 text-sm">
+        <a class="underline text-brand.blue" href="https://scholar.google.com/">Voir toutes les publications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conférences -->
+  <section id="conferences" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand.blue">Conférences & Séminaires</h2>
+      <p class="mt-2 text-slate-600">Présentations orales, posters et interventions invitées.</p>
+      <ul class="mt-6 space-y-4">
+        <li class="p-4 bg-white rounded-xl border border-slate-200">
+          <div class="font-medium">Titre – Événement (ville, pays)</div>
+          <div class="text-sm text-slate-600">Date : 15 mars 2025 · Type : Oral</div>
+          <a href="#" class="text-sm underline text-brand.blue">Résumé / slides</a>
+        </li>
+        <li class="p-4 bg-white rounded-xl border border-slate-200">
+          <div class="font-medium">Titre – Événement</div>
+          <div class="text-sm text-slate-600">Date : 2024 · Type : Poster</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Management & Leadership -->
+  <section id="leadership" class="py-16 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand.blue">Management & Leadership</h2>
+      <p class="mt-2 text-slate-600">Rôles, initiatives et activités associatives.</p>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="p-5 rounded-2xl border border-slate-200 bg-white">
+          <h3 class="font-semibold">MIRA – Moroccan International Researchers & Innovators Association</h3>
+          <p class="mt-2 text-sm text-slate-600">Co‑fondateur / coordination de réseaux, organisation d'événements, mentorat des jeunes chercheurs.</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-slate-200 bg-white">
+          <h3 class="font-semibold">YHS Morocco – Young Hydrologic Society</h3>
+          <p class="mt-2 text-sm text-slate-600">Création de la branche nationale, animation scientifique, recrutement du bureau.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-brand.blue">Contact</h2>
+      <p class="mt-2 text-slate-600">Heureux d'échanger pour collaborations, encadrements ou présentations.</p>
+
+      <div class="mt-6 grid md:grid-cols-2 gap-8">
+        <div class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <form action="mailto:abdellatif.rafik@um6.ma" method="post" enctype="text/plain" class="space-y-4">
+            <div>
+              <label class="block text-sm text-slate-600">Nom</label>
+              <input type="text" name="nom" required class="mt-1 w-full border rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand.orange" />
+            </div>
+            <div>
+              <label class="block text-sm text-slate-600">Email</label>
+              <input type="email" name="email" required class="mt-1 w-full border rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand.orange" />
+            </div>
+            <div>
+              <label class="block text-sm text-slate-600">Message</label>
+              <textarea name="message" rows="4" required class="mt-1 w-full border rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand.orange"></textarea>
+            </div>
+            <button type="submit" class="px-4 py-2 rounded-xl bg-brand.orange text-white hover:opacity-90">Envoyer</button>
+          </form>
+        </div>
+        <div class="p-6 rounded-2xl border border-slate-200 bg-white text-sm text-slate-700">
+          <p><span class="font-medium">Email :</span> abdellatif.rafik@um6.ma</p>
+          <p class="mt-2"><span class="font-medium">Autre :</span> younghydrologicsociety@gmail.com</p>
+          <p class="mt-2"><span class="font-medium">Affiliations :</span> UM6P · CNRS · FGCU</p>
+          <div class="mt-4 flex gap-4">
+            <a href="https://www.researchgate.net/" class="underline text-brand.blue">ResearchGate</a>
+            <a href="https://publons.com/" class="underline text-brand.blue">Publons</a>
+            <a href="https://scholar.google.com/" class="underline text-brand.blue">Google Scholar</a>
+            <a href="https://www.linkedin.com/" class="underline text-brand.blue">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-slate-500 flex flex-col md:flex-row items-center justify-between gap-2">
+      <p>© <span id="y"></span> Abdellatif Rafik. Tous droits réservés.</p>
+      <p>Construit avec HTML + Tailwind. Hébergeable gratuitement sur GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
